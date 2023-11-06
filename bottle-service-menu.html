@@ -1,144 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bottle Service Menu</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <style>
-        @media print {
-            @page {
-                size: 5.5in 11in;
-                margin: 0.25in;
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottle Service Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    @media print {
+      @page {
+        size: 5.5in 11in;
+        margin: 0.25in;
+      }
+      body {
+        margin: 0;
+      }
+      .no-print {
+        display: none;
+      }
+    }
 
-            body {
-                margin: 0;
-            }
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
 
-            .no-print {
-                display: none;
-            }
-        }
+    .menu-container {
+      width: 5.5in;
+      height: 11in;
+      padding: 0.5rem;
+    }
 
-        body {
-            font-family: 'Oswald', sans-serif;
-        }
+    .category {
+      font-family: 'Archivo Black', sans-serif;
+      letter-spacing: -1px;
+      font-size: 1.75rem;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      color: #E306A3;
+    }
 
-        .menu-container {
-            width: 5.5in;
-            height: 11in;
-            padding: 0.5rem;
-        }
-
-        .category {
-            font-family: 'Archivo Black', sans-serif;
-            letter-spacing: -1px;
-            font-size: 1.75rem;
-            text-transform: uppercase;
-            margin-bottom: 0.4rem;
-        }
-        .category {
-            font-family: 'Archivo Black', sans-serif;
-            letter-spacing: -2px;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        .category-champagne {
-            color: #E306A3;
-        }
-
-        .category-tequila {
-            color: #E306A3;
-        }
-
-        .category-vodka {
-            color: #E306A3;
-        }
-      
-       .category-cognac {
-            color: #E306A3;
-        }
-      
-       .category-rum {
-            color: #E306A3;
-        }
-       .category-gin {
-            color: #E306A3;
-        }
-      
-       .category-extras {
-            color: #E306A3;
-        }
-
-        /* Add more categories colors as needed */
-    </style>
+    .category-champagne,
+    .category-tequila,
+    .category-vodka,
+    .category-cognac,
+    .category-rum,
+    .category-gin,
+    .category-extras {
+      color: #E306A3;
+    }
+  </style>
 </head>
 
 <body class="bg-black text-gray-200 p-8 flex items-start">
   <div class="max-w-lg border-2 border-purple-500 p-4">
-      <div class="border-2 border-purple-500 p-4" style="max-width: 5.5in;">
-        <h1 class="text-center font-bold text-4xl mb-4">MIDWAY</h1>
-        <h2 class="text-2xl font-semibold text-center mb-6">BOTTLE SERVICE MENU</h2>
+    <div class="border-2 border-purple-500 p-4" style="max-width: 5.5in;">
+      
+<body class="bg-black text-gray-200 p-8 flex items-start">
+  <div class="max-w-lg mx-auto">
+    <!-- Image at the top of the menu -->
+    <img src="Midway_neon_logo.png" alt="Midway Neon Logo" class="block mx-auto my-4" style="max-width: 20%; height: auto;">
 
-        <!-- CHAMPAGNE -->
-        <div class="my-6">
-            <h3 class="category category-champagne mb-2">CHAMPAGNE</h3>
-            <p>Moët Nectar Rose <span class="float-right">$350</span></p>
-            <p>Dom Perignon <span class="float-right">$660</span></p>
-            <p>Ace of Spades Brut Gold <span class="float-right">$925</span></p>
-            <p>Ace of Spades Rosé <span class="float-right">$1100</span></p>
-            <p>Case of Ace - 3 Bottles <span class="float-right">$2775</span></p>
-        </div>
+   
+      <h1 class="text-center font-bold text-4xl mb-4 text-purple-500">BOTTLE SERVICE MENU</h1>
 
-        <!-- TEQUILA -->
-        <div class="my-6">
-            <h3 class="category category-tequila mb-2">TEQUILA</h3>
-            <p>Patron Silver <span class="float-right">$375</span></p>
-            <p>Casa Amigos Reposado <span class="float-right">$400</span></p>
-            <p>Don Julio 1942 <span class="float-right">$925</span></p>
-        </div>
+      
 
-        <!-- VODKA -->
-        <div class="my-6">
-    <h3 class="category category-vodka mb-2">VODKA</h3>
-    <p>CIROC<sub style="font-size: smaller;"> Peach / Red-berry / Melon</sub> <span class="float-right">$375</span></p>
-    <p>Grey Goose <span class="float-right">$375</span></p>
-</div>
+      <!-- CHAMPAGNE -->
+      <div class="my-6">
+        <h3 class="category category-champagne mb-2">CHAMPAGNE</h3>
+        <p>Moët Nectar Rose <span class="float-right">$350</span></p>
+        <p>Dom Perignon <span class="float-right">$660</span></p>
+        <p>Ace of Spades Brut Gold <span class="float-right">$925</span></p>
+        <p>Ace of Spades Rosé <span class="float-right">$1100</span></p>
+        <p>Case of Ace - 3 Bottles <span class="float-right">$2775</span></p>
+      </div>
 
-        <!-- COGNAC -->
-        <div class="my-6">
-            <h3 class="category category-cognac mb-2">COGNAC</h3>
-            <p>Hennessy VS <span class="float-right">$375</span></p>
-            <p>REMY Martin 1738 <span class="float-right">$400</span></p>
-            <p>REMY Martin LOUIS XII <span class="float-right">$6000</span></p>
-        </div>
+      <!-- TEQUILA -->
+      <div class="my-6">
+        <h3 class="category category-tequila mb-2">TEQUILA</h3>
+        <p>Patron Silver <span class="float-right">$375</span></p>
+        <p>Casa Amigos Reposado <span class="float-right">$400</span></p>
+        <p>Don Julio 1942 <span class="float-right">$925</span></p>
+      </div>
 
-        <!-- RUM -->
-        <div class="my-6">
-            <h3 class="category category-rum mb-2">RUM</h3>
-            <p>Captain Morgan Spiced <span class="float-right">$375</span></p>
-        </div>
+      <!-- VODKA -->
+      <div class="my-6">
+        <h3 class="category category-vodka mb-2">VODKA</h3>
+        <p>CIROC<sub style="font-size: smaller;"> Peach / Red-berry / Melon</sub> <span class="float-right">$375</span></p>
+        <p>Grey Goose <span class="float-right">$375</span></p>
+      </div>
 
-        <!-- GIN -->
-        <div class="my-6">
-            <h3 class="category category-gin mb-2">GIN</h3>
-            <p>Hendrick’s <span class="float-right">$375</span></p>
-        </div>
+      <!-- COGNAC -->
+      <div class="my-6">
+        <h3 class="category category-cognac mb-2">COGNAC</h3>
+        <p>Hennessy VS <span class="float-right">$375</span></p>
+        <p>REMY Martin 1738 <span class="float-right">$400</span></p>
+        <p>REMY Martin LOUIS XIII <span class="float-right">$6000</span></p>
+      </div>
 
-                <!-- EXTRAS -->
-        <div class="my-6">
-            <h3 class="category category-extras mb-2">EXTRAS</h3>
-            <p>Bottled Water 6pk/12pk <span class="float-right">$30/$60</span></p>
-            <p>Redbull 6pk/12pk <span class="float-right">$30/$60</span></p>
-        </div>
+      <!-- RUM -->
+      <div class="my-6">
+        <h3 class="category category-rum mb-2">RUM</h3>
+        <p>Captain Morgan Spiced <span class="float-right">$375</span></p>
+      </div>
 
+      <!-- GIN -->
+      <div class="my-6">
+        <h3 class="category category-gin mb-2">GIN</h3>
+        <p>Hendrick’s <span class="float-right">$375</span></p>
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="my-6">
+        <h3 class="category category-extras mb-2">EXTRAS</h3>
+        <p>Bottled Water 6pk/12pk <span class="float-right">$30/$60</span></p>
+        <p>Redbull 6pk/12pk <span class="float-right">$30/$60</span></p>
+      </div>
     </div>
-
+  </div>
 </body>
-
 </html>
-
